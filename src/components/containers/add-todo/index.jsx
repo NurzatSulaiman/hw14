@@ -19,8 +19,9 @@ const AddTodoContainer = () => {
       setInputValue('')
     }
   }
+
   return (
-    <div>
+    <form style={{display: 'flex', marginBottom: '20px', justifyContent: 'space-around'}}>
       <Input
         value={inputValue}
         onChange={handleInputValue}
@@ -28,7 +29,7 @@ const AddTodoContainer = () => {
       <Buttons
         onClick={handleAddTodo}
       >Add todo</Buttons>
-    </div>
+    </form>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import {TextField} from "@mui/material";
 
 const Input = (props) => {
   const {
@@ -9,11 +10,14 @@ const Input = (props) => {
 
   return (
     <div>
-      <input
-        value={value}
-        onChange={onChange}
-        type={type}
-      />
+      {/*<input*/}
+      {/*  value={value}*/}
+      {/*  onChange={onChange}*/}
+      {/*  type={type}*/}
+      {/*/>*/}
+      <TextField id="outlined-basic" label="enter task" variant="outlined" value={value}
+                 onChange={onChange}
+                 type={type} />
     </div>
   )
 }

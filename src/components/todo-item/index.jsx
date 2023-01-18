@@ -1,4 +1,5 @@
 import React from "react";
+import {Button} from "@mui/material";
 
 const TodoItem = (props) => {
   const {
@@ -16,9 +17,9 @@ const TodoItem = (props) => {
       }}
     >
       {text}
-      <button onClick={onDelete}>
+      <Button onClick={onDelete} variant="outlined" color="error" size='small' style={{marginLeft: '20px'}}>
         delete
-      </button>
+      </Button>
     </li>
   );
 };
